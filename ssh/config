@@ -1,0 +1,16 @@
+ForwardX11 yes
+ForwardX11Trusted yes
+ForwardAgent yes
+NoHostAuthenticationForLocalhost yes
+
+Host starbuck.nwc.ou.edu starbuck
+    User may2344
+    ServerAliveInterval 300
+
+Host bragg-tun
+    Hostname localhost
+    Port 7777
+
+Host ray-tun
+    Hostname localhost
+    Port 7778
