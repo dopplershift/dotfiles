@@ -9,7 +9,7 @@
 #setdevdir /home/rmay/edge
 #export PYTHONPATH="${HOME}/.local/lib64/python2.6/site-packages:${PYTHONPATH}"
 #export LESSCOLOR=yes
-export LESSOPEN="|pygmentize -g -f terminal256 %s"
+export LESSOPEN="|pygmentize -g -f terminal256 -O encoding=latin1 %s"
 #export LESSCOLORIZER="pygmentize -f terminal256"
 #export PATH="${HOME}/.local/bin:${PATH}:/sbin"
 
