@@ -1,18 +1,22 @@
+[user]
+	name = Ryan May
+	email = rmay31@gmail.com
 [alias]
 	st = status
 	ci = commit
 	ds = diff --staged
 	co = checkout
+	br = branch
+	last = log -1 HEAD
 	unstage = reset HEAD --
 	clear = checkout --
 	ribbon = tag --force _ribbon origin/edge5
 	catchup = log --stat --reverse --topo-order _ribbon..origin/edge5
-[user]
-	name = Ryan May
-	email = ryan.may@eecradar.com
 [color]
 	ui = auto
+[diff]
+	tool = meld
 [merge]
 	tool = meld
 [push]
-	default = tracking
+	default = upstream
