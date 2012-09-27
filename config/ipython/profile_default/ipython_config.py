@@ -21,7 +21,7 @@ c = get_config()
 # c.InteractiveShellApp.exec_lines = []
 
 # If true, an 'import *' is done from numpy and pylab, when using pylab
-# c.InteractiveShellApp.pylab_import_all = True
+c.InteractiveShellApp.pylab_import_all = True
 
 # A list of dotted module names of IPython extensions to load.
 # c.InteractiveShellApp.extensions = []
