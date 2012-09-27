@@ -19,3 +19,12 @@ autocmd FileType python map <f2> :w\|!python %<cr>
 
 set t_Co=256
 colorscheme skittles_berry
+
+" Show hightlighting groups for current word
+nmap <C-S-P> :call <SID>SynStack()<CR>
+function! <SID>SynStack()
+	if !exists("*synstack")
+		return
+	endif
+	echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfun
