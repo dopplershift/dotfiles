@@ -12,6 +12,7 @@
 	clear = checkout --
 	ribbon = tag --force _ribbon origin/edge5
 	catchup = log --stat --reverse --topo-order _ribbon..origin/edge5
+	ignore = update-index --assume-unchanged
 [color]
 	ui = auto
 [diff]
