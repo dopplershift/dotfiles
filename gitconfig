@@ -2,6 +2,7 @@
 	name = Ryan May
 	email = rmay31@gmail.com
 [alias]
+	new = !sh -c 'git log $1@{1}..$1@{0} "$@"'
 	st = status
 	ci = commit
 	ds = diff --staged
