@@ -14,7 +14,7 @@
 source ~/.profile
 
 # BEGIN LOCAL
-export BROWSER="firefox"
+export BROWSER="google-chrome"
 
 # Things from dev.gentoo.org/~ciaranm/configs/bashrc -- thanks Ciaran!
 if [[ "${TERM}" == "rxvt-unicode" ]] ; then
