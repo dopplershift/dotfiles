@@ -15,7 +15,6 @@ source ~/.profile
 
 # BEGIN LOCAL
 export BROWSER="firefox"
-export TERMCMD="gnome-terminal"
 
 # Things from dev.gentoo.org/~ciaranm/configs/bashrc -- thanks Ciaran!
 if [[ "${TERM}" == "rxvt-unicode" ]] ; then
@@ -58,9 +57,14 @@ export WORDCHARS='*?_-[]~=&;!#$%^(){}'
 
 # Follow GNU LS_COLORS for completion menus
 zmodload -i zsh/complist
-eval $(dircolors -b)
-zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
-zstyle ':completion:*:*:kill:*' list-colors '=%*=01;31'
+if whence dircolors >/dev/null; then
+	eval $(dircolors -b)
+	zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+else
+	export CLICOLOR=1
+	zstyle ':completion:*' list-colors ''
+fi
+	zstyle ':completion:*:*:kill:*' list-colors '=%*=01;31'
 
 # Load the completion system
 autoload -U compinit; compinit
@@ -342,7 +346,12 @@ bindkey '\e[5~' up-history # PageUp
 bindkey '\e[6~' down-history # PageDown
 
 # Aliases
-alias ls="ls -F --color=auto"
+if [[ `uname` == "Darwin" ]]; then
+	alias ls="ls -F"
+else
+	alias ls="ls -F --color=auto"
+	export TERMCMD="gnome-terminal"
+fi
 alias ll="ls -Al"
 alias ld="ls -d"
 alias lld="ls -ld"
