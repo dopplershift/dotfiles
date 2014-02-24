@@ -13,9 +13,9 @@ export LESSOPEN="|pygmentize -g -f terminal256 -O encoding=latin1 %s"
 #export LESSCOLORIZER="pygmentize -f terminal256"
 #export PATH="${HOME}/.local/bin:${PATH}:/sbin"
 
-if [ -d "${HOME}/anaconda/envs/py27" ] ; then
-	source activate py27
-fi
+#if [ -d "${HOME}/anaconda/envs/py27" ] ; then
+	#source activate py27
+#fi
 #. /opt/intel/mkl/bin/mklvars.sh intel64
 
 # Most applications support several languages for their output.
