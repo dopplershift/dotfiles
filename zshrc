@@ -43,6 +43,7 @@ fi
 alias page=$PAGER
 alias grep="grep --color=always"
 alias py="source activate"
+alias pybuild="python setup.py build_ext --inplace"
 #if [ -z $VG_VIEWGLOB_ACTIVE ] && [ $DISPLAY ] ; then
 #    exec viewglob
 #fi
