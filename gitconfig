@@ -14,6 +14,7 @@
 	ribbon = tag --force _ribbon origin/edge5
 	catchup = log --stat --reverse --topo-order _ribbon..origin/edge5
 	ignore = update-index --assume-unchanged
+	g = grep --break --heading --line-number
 [color]
 	ui = auto
 [diff]
@@ -22,3 +23,6 @@
 	tool = meld
 [push]
 	default = upstream
+[grep]
+	extendRegexp = true
+	lineNumber = true
