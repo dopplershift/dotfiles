@@ -15,6 +15,7 @@ source ~/.profile
 
 # BEGIN LOCAL
 export BROWSER="google-chrome"
+export EDITOR="vim"
 
 # Things from dev.gentoo.org/~ciaranm/configs/bashrc -- thanks Ciaran!
 if [[ "${TERM}" == "rxvt-unicode" ]] ; then
