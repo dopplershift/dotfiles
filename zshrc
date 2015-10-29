@@ -517,7 +517,7 @@ NO_null_glob		\
    numeric_glob_sort	\
 NO_overstrike		\
    path_dirs		\
-   posix_builtins	\
+NO_posix_builtins	\
 NO_print_exit_value 	\
 NO_prompt_cr		\
    prompt_subst		\
