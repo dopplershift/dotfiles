@@ -29,3 +29,4 @@
 	lineNumber = true
 [core]
 	editor = vim
+	pager = diff-highlight | less -r
