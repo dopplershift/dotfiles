@@ -306,7 +306,7 @@ compdef _nothing etc-update dispatch-conf fixpackages
 HISTFILE=$HOME/.zshist
 SAVEHIST=10000
 HISTSIZE=10000
-TMPPREFIX=/tmp
+TMPPREFIX=/tmp/zsh
 
 # Key bindings
 
