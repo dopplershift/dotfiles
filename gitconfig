@@ -1,6 +1,7 @@
 [user]
 	name = Ryan May
 	email = rmay31@gmail.com
+	signingkey = 33BF97C62E8ACC62
 [alias]
 	new = !sh -c 'git log --topo-order --reverse $1@{1}..$1@{0} "$@"'
 	st = status
@@ -30,3 +31,7 @@
 [core]
 	editor = vim
 	pager = diff-highlight | less -r
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg2
