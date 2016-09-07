@@ -11,8 +11,6 @@
 #   time to read through the comments. Of course, you can still see
 #   zsh's superiority by simply plugging this file in and using it.
 
-source ~/.profile
-
 # BEGIN LOCAL
 export BROWSER="google-chrome"
 export EDITOR="vim"
@@ -27,14 +25,6 @@ else
     # This works around a problem with gedit's embedded terminal on Ubuntu
     export TERM="xterm"
     export TERMTYPE="256"
-fi
-
-#if [[ -n "${PATH/*$HOME\/bin:*}" ]] ; then
-#    export PATH="$HOME/bin:$PATH"
-#fi
-
-if [[ -n "${PATH/*\/usr\/local\/bin:*}" ]] ; then
-    export PATH="/usr/local/bin:$PATH"
 fi
 
 if [[ -f /usr/bin/less ]] ; then
