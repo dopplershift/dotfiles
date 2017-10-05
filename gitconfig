@@ -3,8 +3,9 @@
 	email = rmay31@gmail.com
 	signingkey = 33BF97C62E8ACC62
 [alias]
+	authors = ! git log --format='%aN' | sort -u
 	new = !sh -c 'git log --topo-order --reverse $1@{1}..$1@{0} "$@"'
-	st = status
+	st = status -sb
 	ci = commit
 	ds = diff --staged
 	co = checkout
