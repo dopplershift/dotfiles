@@ -4,9 +4,7 @@ index-servers =
 	pypitest
 
 [pypi]
-repository: https://pypi.python.org/pypi
 username: dopplershift
 
 [pypitest]
-repository: https://testpypi.python.org/pypi
 username: dopplershift
