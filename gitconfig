@@ -36,8 +36,12 @@
 	gpgsign = true
 [gpg]
 	program = gpg2
-[merge "jupyternotebook"]
-	driver = git-nbmergedriver merge %O %A %B %L %P
-	name = jupyter notebook merge driver
-[diff "jupyternotebook"]
-	command = git-nbdiffdriver diff
+#[merge "jupyternotebook"]
+	#driver = git-nbmergedriver merge %O %A %B %L %P
+	#name = jupyter notebook merge driver
+#[diff "jupyternotebook"]
+	#command = git-nbdiffdriver diff
+[log]
+	mailmap = true
+[pull]
+	ff = only
