@@ -29,12 +29,15 @@
 # You can also deploy your own backend outside of matplotlib by
 # referring to the module name (which must be in the PYTHONPATH) as
 # 'module://my_backend'
-backend : Qt4Agg
+backend : MacOSX
+#backend : Qt5Agg
+#backend : TkAgg
+#backend : Agg
 
 # If you are using the Qt4Agg backend, you can choose here
 # to use the PyQt4 bindings or the newer PySide bindings to
 # the underlying Qt4 toolkit.
-backend.qt4 : PySide        # PyQt4 | PySide
+#backend.qt4 : PySide        # PyQt4 | PySide
 
 # Note that this can be overridden by the environment variable
 # QT_API used by Enthought Tool Suite (ETS); valid values are
@@ -215,7 +218,7 @@ backend.qt4 : PySide        # PyQt4 | PySide
                                  # fonts when a symbol can not be found in one of
                                  # the custom math fonts.
 
-#mathtext.default : it # The default font to use for math.
+mathtext.default : regular # The default font to use for math.
                        # Can be any of the LaTeX font names, including
                        # the special name "regular" for the same font
                        # used in regular text.
@@ -228,7 +231,7 @@ backend.qt4 : PySide        # PyQt4 | PySide
 #axes.facecolor      : white   # axes background color
 #axes.edgecolor      : black   # axes edge color
 #axes.linewidth      : 1.0     # edge linewidth
-#axes.grid           : False   # display grid or not
+#axes.grid           : True   # display grid or not
 #axes.titlesize      : large   # fontsize of the axes title
 #axes.labelsize      : medium  # fontsize of the x any y labels
 #axes.labelweight    : normal  # weight of the x and y labels
