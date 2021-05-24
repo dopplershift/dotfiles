@@ -18,8 +18,6 @@
 	ignore = update-index --assume-unchanged
 	g = grep --break --heading --line-number
 	pl = log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"
-[color]
-	ui = auto
 [diff]
 	tool = meld
 [merge]
