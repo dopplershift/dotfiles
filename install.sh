@@ -1,17 +1,12 @@
 #!/bin/bash
 
-# Install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-# Clean out what oh-my-zsh left
-cd ~
-rm ~/.zshrc
-rm -rf ~/.oh-my-zsh/custom
-
 # Get the location of the install script (and hence git repo)
-SRCDIR=`dirname "$0"`
+pushd `dirname "$0"` > /dev/null
+SRCDIR=`pwd`
+popd > /dev/null
 
 # Set up zsh customizations
+mkdir ~/.oh-my-zsh
 ln -sf $SRCDIR/custom ~/.oh-my-zsh/
 
 # Install vim plugins
@@ -26,5 +21,5 @@ ln -sf $SRCDIR/.vimrc ~
 ln -sf $SRCDIR/.zprofile ~
 ln -sf $SRCDIR/.zshrc ~
 
-# Reload zsh
-exec /bin/zsh
+# Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --keep-zshrc
