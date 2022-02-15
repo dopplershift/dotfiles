@@ -21,7 +21,7 @@ ln -sf $SRCDIR/.zshrc ~
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --keep-zshrc --unattended
 
 # Set up zsh customizations
-mkdir ~/.oh-my-zsh
+rm -rf ~/.oh-my-zsh/custom
 ln -sf $SRCDIR/custom ~/.oh-my-zsh/
 
 # Reload zsh
