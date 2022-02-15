@@ -1,7 +1,7 @@
 [user]
 	name = Ryan May
 	email = rmay31@gmail.com
-	signingkey = 33BF97C62E8ACC62
+	signingkey = 3DD4CCAA4E25AC3E
 [alias]
 	authors = ! git log --format='%aN' | sort -u
 	new = !sh -c 'git log --topo-order --reverse $1@{1}..$1@{0} "$@"'
