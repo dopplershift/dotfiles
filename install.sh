@@ -13,6 +13,7 @@ ln -sf $SRCDIR/ssh/config ~/.ssh/config
 
 # Regular dotfile
 ln -sf $SRCDIR/.gitconfig ~
+ln -sf $SRCDIR/.p10k.zsh ~
 ln -sf $SRCDIR/.vimrc ~
 ln -sf $SRCDIR/.zprofile ~
 ln -sf $SRCDIR/.zshrc ~
