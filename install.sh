@@ -11,12 +11,16 @@ ln -sf $SRCDIR/vim ~/.vim
 # Basic ssh config
 ln -sf $SRCDIR/ssh/config ~/.ssh/config
 
-# Regular dotfile
+# Regular dotfiles
 ln -sf $SRCDIR/.gitconfig ~
 ln -sf $SRCDIR/.p10k.zsh ~
 ln -sf $SRCDIR/.vimrc ~
 ln -sf $SRCDIR/.zprofile ~
 ln -sf $SRCDIR/.zshrc ~
+
+# Scripts
+mkdir -p ~/.local/bin
+ln -sf $SRCDIR/bin/diff-highlight ~/.local/bin
 
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --keep-zshrc --unattended
