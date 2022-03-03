@@ -29,7 +29,7 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 ln -sf $SRCDIR/custom/aliases.zsh ~/.oh-my-zsh/custom/
 ln -sf $SRCDIR/custom/ls-colors.zsh ~/.oh-my-zsh/custom/
 ln -sf $SRCDIR/custom/things-to-load.zsh ~/.oh-my-zsh/custom/
-ln -sf $SRCDIR/custom/plugin/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins
+ln -sf $SRCDIR/custom/plugins/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins
 ln -sf $SRCDIR/custom/themes/powerlevel10k ~/.oh-my-zsh/custom/themes
 
 # Reload zsh
