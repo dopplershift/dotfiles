@@ -9,6 +9,7 @@ popd > /dev/null
 ln -sf $SRCDIR/vim ~/.vim
 
 # Basic ssh config
+mkdir -p ~/.ssh
 ln -sf $SRCDIR/ssh/config ~/.ssh/config
 
 # Regular dotfiles
@@ -23,6 +24,7 @@ mkdir -p ~/.local/bin
 ln -sf $SRCDIR/bin/diff-highlight ~/.local/bin
 
 # Install oh-my-zsh
+rm -rf ~/.oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --keep-zshrc --unattended
 
 # Set up zsh customizations
